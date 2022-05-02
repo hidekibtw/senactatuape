@@ -1,1 +1,37 @@
 Criando um diretório e arquivo no Github
+Data.: 27/04/2022
+
+Testando a tomada da bancada do SENAC: FASE CIN BEYTRI: 121.2V, FASE COM TERRA: 122.3V, NEUTRO COM TERRA: 0,5V
+
+Testando a continuidade do cabo de força:
+(OBS: Testei todas as pontas do cabo de força, e todas deram o resultado = 0, então esta funcionando corretamente)
+
+Testando o cabo de força ligada na tomada:
+Ligando a Fonte de alimentação na tomada:
+(obs: NEUTRO COM FASE = 121.2V, FASE COM NEUTRO = 121.8V(VOLTAGEM MENOR COMPARADA COM TESTE DIRETAMENTE NA TOMADA), NEUTRO COM FASE = 0.6V(TEVE AUMENTO DE VOLTAGEM COMPARADA COM O TESTE DIRETO NA TOMADA)
+
+Ligando a fonta de alimentação na tomada
+(OBS: Metodo de Ligação da fonte = Uso de clip, uma ponta no pino com a cor de fio verde, e a outra ponta no pino com a cor de fio preto(Power Switch - ON/OFF). Com isso, executamos o funcionamentoe ligação da fonte)
+
+Testando a Corrente Contínua da Fonte
+(OBS: 3.31V - LARANJA, 5.11V - VERMELHO, 12.16V - AMARELO (METODO DE TESTE: UMA PONTA DE TESTE NO FIO PRETO, E OUTRA PONTA DE TESTE NAS CORES CITADAS (VERMELHO, LARANJA, AMARELO))
+
+Testando a fonte com o Power Tester(Testador de Fonte de Alimentação ATX) :
+(OBS: +12 = 12.2 (V1,V2), +3.3V = 3.2V, +5V = 5.0V, -12V = -12.1V, 5VSB = 5.0, PG = 320
+
+Testando fonte com Proto Board:
+(OBS: 5.11 - VERMELHO, 12.16V - AMARELO, VERMELHO COM AMARELO - 7.03V (Va+Vb))
+
+Testando Cooler com Proto Board:
+(OBS: Conectamos primeiramente a fonte ao Proto Board corretamente, e depois conectamos os jumper's, um no entrada negativo no proto board e outro na entrada com fio preto do cooler, e pegamos outro jumper, e conectamos um na entrada positiva do proto board, e o outro na entrada com o fio vermelho do cooler, testamos nas duas voltagens(5v, 12v), e funcionou corretamente, sendo o 12v - Amarelo = mais forte, e 5v - Mais fraco.)
+
+Testando 3 Cooler's com Circuito em paralelo no Proto Board:
+(OBS: Conectamos os Jumper's no barramento horizontal positivo negativo, para o barramento vertical nos numeros de fileira 19(negativo), e fileira 29(positivo) e conectamos outros 3 jumper's na fileira 19(negativo) que esta conectada o jumper no barramento vertical, e outros 3 jumper's na fileira 29(posivivo) que esta conectada o jumper no barramento vertical, e conectamos as outras pontas desses 6 jumper's que conectamos nas fileiras, nos cooler ( ponta negativa ao fio preto, e ponta positiva no fio vermelho)
+
+Testamos os 3 cooler's nas duas voltagens(5v,12v) e todos 3 funcionaram correntamente.
+
+Testando os 3 Cooler's com Circuito em série no Proto Board:
+(OBS: Conectamos agora um jumper no paralelo posivito no fio de cor vermelha, e pegamos outro jumper e conectamos no fio de cor preta desse mesmo cooler, e pegamos a outra ponta, e conectamos em outro cooler(2), agora na entrada desse outro cooler de cor vermelha, e a outra ponta desse jumper no cooler numero 3, na entrada da cor vermelha, e pegamos a outra ponta desse jumper, e conectamos no paralelo negativo, assim, fazendo os 3 cooler's funcionar juntos, mas mais fraco, por conta que estão com fios interligados.
+
+Testando os 3 Cooler's com Circuito Misto no Proto Board:
+(OBS: Fiz 2 Cooler's com Circuito em Série, e outros 2 cooler's em Circuito paralelo; os 4 cooler's conectados e funcionando ao mesmo tempo)
