@@ -35,3 +35,6 @@ Testando os 3 Cooler's com Circuito em série no Proto Board:
 
 Testando os 3 Cooler's com Circuito Misto no Proto Board:
 (OBS: Fiz 2 Cooler's com Circuito em Série, e outros 2 cooler's em Circuito paralelo; os 4 cooler's conectados e funcionando ao mesmo tempo)
+
+Circuito em serie - passando a corrente de um para o outro dividindo a voltagem em eles, Circuito em série tem por princípio a ligação dos componentes em sequência, sem a divisão do circuito, ou seja, duas ou mais cargas estão sendo alimentadas por um único caminho
+Circuito Paralelo - O circuito em paralelo refere-se à ligação de duas ou mais cargas em que há um ponto em comum, de derivação. Ou seja, o fluxo da corrente elétrica é distrubuído proporcionalmente para cada carga, conforme a resistência 
