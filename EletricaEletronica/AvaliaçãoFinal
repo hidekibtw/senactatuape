@@ -16,3 +16,15 @@ fASE + Neutro = 121.7V / Fase + Terra = 122.3V / Neutro + Terra = 0.03V
 6) Montando o Circuito na ProtoBoard (Usando com Clipes na fonte):
 OBS: Circuito de 12V (Cabo Amarelo 12 + Preto 0V) Primeira Trilha Horizontal/ Circuito de 5v (Cabo Vermelho 5V + Preto 0V) Segunda Trilha Horizontal/ Circuito de 7V ( Cabo Amarelo 12V + Vermelho 5V) Terceira Trilha Horizontal:
 CIRCUITO DE 12V = 12.11V / CIRCUITO DE 5V = 5.09V / CIRCUITO DE 7V = 7V
+
+7) Montar o Circuito com 2 (dois) Multímetros:
+Primeiro Multímetro: Tensão Elétrica (20V - CC/DC) = 12.03V
+Segundo Multímetro: Corrente Elétrica (10A) = 0.26 mA
+
+8) Montar o Circuito em Paralelo dos Coolers
+RESULTADO DE TENSÃO E CORRENTE(U x I = ?) = 12.03 x 0.25 =  3,0075W(3W) De Potência
+
+9) Montar o Circuito em Paralelo dos LED's
+Primeiro: Medir a Resistência do Resistor (2000Ohms)
+Segundo: Testar o LED no Multímetro (Opção LED)
+RESULTADO DE TENSÃO E CORRENTE(U x I = ?) = 3,3656W(3,3W) De Potência
