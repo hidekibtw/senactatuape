@@ -1,11 +1,18 @@
 1) Tensões elétricas da tomada (CORRENTE ALTERNADA):
 fASE + Neutro = 121.7V / Fase + Terra = 122.3V / Neutro + Terra = 0.03V
 
-2)  Testar Continuídade do Cabo de Força (Teste de Diodo):
+2)  Testando Continuídade do Cabo de Força (Teste de Diodo):
 Fase + Fase = 0V / Neutro + Neutro = 0V / Terra + Terra =  0V (TODOS OK)
 
-3) Testar a Resistência do Cabo de Força (Teste de 200 Ohms):
+3) Testando a Resistência do Cabo de Força (Teste de 200 Ohms):
 Fase + Fase = 0,03V / Neutro + Neutro = 0,02V / Terra + Terra = 0,03V (TODOS OK)
 
-4) Testar as Tensões Elétricas no Cabo (Corrente Alternada) :
+4) Testando as Tensões Elétricas no Cabo (Corrente Alternada) :
 fASE + Neutro = 121.7V / Fase + Terra = 122.3V / Neutro + Terra = 0.03V
+
+5) Testar a Fonte de Alimentação com o Testador de Fonte:
+-12 = -12.2V / +12V2 = 12.1 / 5VSB = 5.0 / PG = 350ms / +5V = 5.0 / +12V1 = 12.1V / +3.3V = 3.3V
+
+6) Montando o Circuito na ProtoBoard (Usando com Clipes na fonte):
+OBS: Circuito de 12V (Cabo Amarelo 12 + Preto 0V) Primeira Trilha Horizontal/ Circuito de 5v (Cabo Vermelho 5V + Preto 0V) Segunda Trilha Horizontal/ Circuito de 7V ( Cabo Amarelo 12V + Vermelho 5V) Terceira Trilha Horizontal:
+CIRCUITO DE 12V = 12.11V / CIRCUITO DE 5V = 5.09V / CIRCUITO DE 7V = 7V
