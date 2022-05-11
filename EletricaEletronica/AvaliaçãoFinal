@@ -1,0 +1,11 @@
+1) Tensões elétricas da tomada (CORRENTE ALTERNADA):
+fASE + Neutro = 121.7V / Fase + Terra = 122.3V / Neutro + Terra = 0.03V
+
+2)  Testar Continuídade do Cabo de Força (Teste de Diodo):
+Fase + Fase = 0V / Neutro + Neutro = 0V / Terra + Terra =  0V (TODOS OK)
+
+3) Testar a Resistência do Cabo de Força (Teste de 200 Ohms):
+Fase + Fase = 0,03V / Neutro + Neutro = 0,02V / Terra + Terra = 0,03V (TODOS OK)
+
+4) Testar as Tensões Elétricas no Cabo (Corrente Alternada) :
+fASE + Neutro = 121.7V / Fase + Terra = 122.3V / Neutro + Terra = 0.03V
