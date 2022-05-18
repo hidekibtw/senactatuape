@@ -5,6 +5,7 @@ CTRL + L = CLEAR
 CTRL + ALT + BACKSPACE = REINICIAR AMBIENTE GRÁFICO
 CTRL + ALT + F1 = CMD
 CTRL + ALT + F7 = VOLTAR PARA O AMBIENTE GRÁFICO
+CTRL + D = SAI DO TERMINAL
 id
 $ = usuario comum
 sudo = super usuario
@@ -28,4 +29,4 @@ sudo apt install psensor
 sudo apt install p7zip-full p7zip-rar guvcview cheese
 sudo apt install kazam audacity vlc kolourpaint notepadqq 
 
-sudo init 0
+sudo init 0 = DESLIGA A MAQUINA VIRTUAL(linux)
