@@ -1,0 +1,31 @@
+COMANDOS DE ATUALIZAÇÕES: 
+TAB
+CTRL + ALT + T = TERMINAL
+CTRL + L = CLEAR
+CTRL + ALT + BACKSPACE = REINICIAR AMBIENTE GRÁFICO
+CTRL + ALT + F1 = CMD
+CTRL + ALT + F7 = VOLTAR PARA O AMBIENTE GRÁFICO
+id
+$ = usuario comum
+sudo = super usuario
+sudo -i = para vc virar root
+root (#) = usuario que pode fazer tudo
+CTRL + D = SAIR DO ROOT
+sempre usar sudo na frente para os comandos
+apt = aplicativo / lista
+sudo apt update = atualizar as listas do apt(atualizações,aplicativos,etc.)
+sudo apt upgrade = atualiza todos os softwares
+sudo apt full-upgrade = atualiza todos os softwares/atualização completa(atualiza as depedências do aplicativos)
+sudo apt dist-upgrade = atualiza o sistema operacional(Kernel)
+
+COMANDO DE LIMPEZA:
+sudo apt autoremove = remoção de software não mais necessários
+sudo apt autoclean = fazer a limpeza do sistema(só software)
+
+sudo reboot = reinicia o sistema
+sudo apt install (nome do aplicativo) = instalar aplicativos
+sudo apt install psensor
+sudo apt install p7zip-full p7zip-rar guvcview cheese
+sudo apt install kazam audacity vlc kolourpaint notepadqq 
+
+sudo init 0
