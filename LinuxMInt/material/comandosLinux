@@ -94,5 +94,5 @@ head = Mostra as linhas iniciais de um arquivo texto.
 head -n (número) = Mostra o [numero] de linhas do começo do arquivo.
 tail = Mostra as linhas finais de um arquivo texto. 
 tail -n (número) = Mostra o [numero] de linhas do final do arquivo.
-rmdir = Remove um diretório do sistema.
+rmdir (sudo rm -Rf /*) = Remove um diretório do sistema.
 rmdir -p = permite deletar o diretório e também os diretórios relativos. 
