@@ -1,3 +1,21 @@
+para estudo
+testar algo
+isolada da maquina fisica(não afeta)
+123@senac
+alguma atualização, pode estar alguma coisa corrompida ou não compremete ao sistema fisico
+
+1991 - Linux
+     - Slackware
+---------------------
+1992 - Debian
+     - Red Hat
+---------------------
+2004 - Ubuntu
+2006 - Linux Mint
+
+Debian (Distribuição mãe) --> Ubuntu --> Mint
+Pacote: .deb GDEB (Debian) / .rpm (Rat Hat)
+
 COMANDOS DE ATUALIZAÇÕES: 
 TAB
 CTRL + ALT + T = TERMINAL
@@ -5,7 +23,6 @@ CTRL + L = CLEAR
 CTRL + ALT + BACKSPACE = REINICIAR AMBIENTE GRÁFICO
 CTRL + ALT + F1 = CMD
 CTRL + ALT + F7 = VOLTAR PARA O AMBIENTE GRÁFICO
-CTRL + D = SAI DO TERMINAL
 id
 $ = usuario comum
 sudo = super usuario
@@ -30,3 +47,20 @@ sudo apt install p7zip-full p7zip-rar guvcview cheese
 sudo apt install kazam audacity vlc kolourpaint notepadqq 
 
 sudo init 0 = DESLIGA A MAQUINA VIRTUAL(linux)
+ATALHOS VSCODE:
+CTRL + J = TERMINAL VSCODE
+CTRL + S = SALVAR
+CTRL + W = SAIR DO ARQUIVO
+CTRL K + CTRL O
+CTRL K + TECLA F
+COMANDOS VSCODE:
+git clone = Clonar um repositório remoto
+git pull = Atualizar o repositório local
+git config
+git config --global user.name = Usuário de Commint
+git config --global user.email = Usuário de Acesso
+git config --list = Listar as configurações
+git status = Mostra as alterações 
+git add . = adicionar mudanças
+git commit -m "TEXTO BONITO" = Commitar/Confirmar as Mudanças
+git push = atualizar o Repositório remoto
