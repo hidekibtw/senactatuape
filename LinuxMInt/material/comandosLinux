@@ -63,4 +63,29 @@ git config --list = Listar as configurações
 git status = Mostra as alterações 
 git add . = adicionar mudanças
 git commit -m "TEXTO BONITO" = Commitar/Confirmar as Mudanças
+<<<<<<< HEAD
 git push = atualizar o Repositório remoto
+=======
+git push = atualizar o Repositório remoto
+pwd = Mostra o nome e caminho do diretório atual. 
+ls = Lista os arquivos de um diretório. 
+ls -l = modo lista
+ls -lh = ler em modo humano
+ls -lha = mostrar documentos/pastas ocultas/Modo detalhado
+Sempre que aparecer qlqr arquivo ou palavra na cor azul, é diretório; sempre que aparecer qlqr arquivo na cor branca é arquivo
+Sempre que aparecer um arquivo da cor azul claro é um link simbolico; sempre que tiver um arquivo ou diretório estiver com um marca texto Verde = PERIGO.
+sempre que estiver um arquivo ou diretório com a cor vermelha é Arquivo compactado.
+ln = Cria links para arquivos e diretórios no sistema.
+cd = mudar de diretório/Entra em um diretório.
+cd / = retornará ao diretório raíz.
+cd - = retornará ao diretório anteriormente acessado.
+cd .. = sobe um diretório.
+cd 
+/ = root(raiz)
+mkdir (nome da pasta) = criar diretório
+mkdir -v (nome da pasta)= criar varios diretórios/Mostra uma mensagem para cada diretório criado.
+touch = Muda a data e hora que um arquivo foi criado/Caso o touch seja usado com arquivos que não existam, por padrão ele criará estes arquivos. 
+mkdir -p = Caso os diretórios dos níveis acima não existam, eles também serão criados.
+mkdir -pv = cria diretório em outro diretório
+
+>>>>>>> d8e6a0088d8dade3f4a4ff132536146f85c49153
