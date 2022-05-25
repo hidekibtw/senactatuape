@@ -89,4 +89,10 @@ mkdir -p = Caso os diretórios dos níveis acima não existam, eles também ser�
 mkdir -pv = cria diretório em outro diretório
 echo = Mostra mensagens. Este comando é útil na construção de scripts para mostrar mensagens na tela para o usuário acompanhar sua execução. 
 echo > = criar arquivo com echo.
->>>>>>> d8e6a0088d8dade3f4a4ff132536146f85c49153
+cat -n = Mostra o número das linhas enquanto o conteúdo do arquivo é mostrado. 
+head = Mostra as linhas iniciais de um arquivo texto.
+head -n (número) = Mostra o [numero] de linhas do começo do arquivo.
+tail = Mostra as linhas finais de um arquivo texto. 
+tail -n (número) = Mostra o [numero] de linhas do final do arquivo.
+rmdir = Remove um diretório do sistema.
+rmdir -p = permite deletar o diretório e também os diretórios relativos. 
