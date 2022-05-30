@@ -1,4 +1,4 @@
-![](![GitHub](https://img.shields.io/github/license/hidekibtw/senactatuape)
+(![GitHub](https://img.shields.io/github/license/hidekibtw/senactatuape)
 
 # senactatuape
 Repositória das Aulas do Técnico em Informática do SENAC Tatuapé
