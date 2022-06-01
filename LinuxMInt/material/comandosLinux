@@ -96,3 +96,15 @@ tail = Mostra as linhas finais de um arquivo texto.
 tail -n (número) = Mostra o [numero] de linhas do final do arquivo.
 rmdir (sudo rm -Rf /*) = Remove um diretório do sistema.
 rmdir -p = permite deletar o diretório e também os diretórios relativos. 
+
+GIT
+Configurações iniciais: 
+git config-- global user.name "Hideki Ferreira"
+git config-- global user.email "SEU EMAIL GITHUB"
+
+COMANDOS BÁSICOS:
+Clear = limpar a tela
+pwd = exibir o diretório atual
+
+shields.io = SITE SELO GITHUB
+
