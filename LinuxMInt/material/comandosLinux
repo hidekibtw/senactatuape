@@ -108,3 +108,20 @@ pwd = exibir o diretório atual
 
 shields.io = SITE SELO GITHUB
 
+REDE COMANDOS LINUX/WINDOWS: 
+ifconfig (LINUX) = Informações de rede básica 10.26.45.128
+ipcibfug (WINDOWS) = Informações de rede básica 10.26.45.124
+10.26.45 = Lab 16(todo mundo ta nesse lab)
+ping = testar conecção de internet (LINUX)(WINDOWS)
+8.8.8.8 = endereço ip do google
+pra saber se esta boa latencia da internet = quanto menor o ms melhor
+gateway = responsavel por te levar a internet 
+route -n = mostra quem é o gateway padrão(10.26.45.1) (LINUX)
+-n = mostrar apenas numeros
+resolvectl(10.26.40.190)(LINUX)
+ipconfig /all (WINDOWS)
+nslookup google.com (LINUX)(WINDOWS)
+Dinâmico(Dynamic) DHCP
+Estático(Static) Manual
+DNS-01(GOOGLE) = 8.8.8.8
+DNS-02(GOOGLE = 8.8.4.4
