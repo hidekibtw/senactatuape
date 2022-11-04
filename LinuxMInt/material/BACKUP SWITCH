@@ -1,0 +1,192 @@
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname sw-g05
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$pbuu$5VV04Sordqyw0SxsF2cmg/
+!
+username felipe privilege 15 secret 5 $1$T4Af$3gm9koAQK2d4yEu/SV2Fm.
+username lucas secret 5 $1$ooG/$fMvCkvRkCm5TJ6Q5hAfP4/
+username eduardo secret 5 $1$msWB$iNG0k2UXAOoqrvHSTieDB.
+username sander secret 5 $1$.5tJ$9Esm00I/InBlU3AyLdZOg.
+username pedro secret 5 $1$S1r5$rHYQCBqTgODA29FQ566cb1
+!
+!
+no aaa new-model
+system mtu routing 1500
+no ip domain-lookup
+ip domain-name cisco.com
+!         
+!         
+login block-for 120 attempts 4 within 60
+!         
+!         
+crypto pki trustpoint TP-self-signed-2307117184
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-2307117184
+ revocation-check none
+ rsakeypair TP-self-signed-2307117184
+!         
+!         
+crypto pki certificate chain TP-self-signed-2307117184
+ certificate self-signed 01
+  30820248 308201B1 A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 32333037 31313731 3834301E 170D3933 30333031 30303031 
+  30365A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D32 33303731 
+  31373138 3430819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+  8100AB51 BDD9EF3F 2415B651 787A7B4B 1A830D7B E8E62D20 69FB84F7 B89B5412 
+  57B867B0 A9C07FB0 45698D82 CF5182E7 BCEDF8FD 49C6A970 55466F36 80A751C8 
+  A2A08398 40D4C984 39240C94 FBC5D8E0 B9FDA27E D4D708CB 86A16F6D 093B4D84 
+  6FB1DF58 950FADD6 CB53472D 13C7B0BC FD13AD8F EA224000 7F9A4228 522D0F27 
+  AAA30203 010001A3 70306E30 0F060355 1D130101 FF040530 030101FF 301B0603 
+  551D1104 14301282 1073772D 6730352E 63697363 6F2E636F 6D301F06 03551D23 
+  04183016 80140B00 50881D6B 34DA3A7B 09516E1C A8710348 32A9301D 0603551D 
+  0E041604 140B0050 881D6B34 DA3A7B09 516E1CA8 71034832 A9300D06 092A8648 
+  86F70D01 01040500 03818100 1EF7DB8B 83DA7484 18FE0ABB 431EA0A5 529BBBDE 
+  EAEBEEE4 2EFE14A9 1340BDFC 36BC50EA A8C25BB4 80C3C24E F929D5A2 0FCEB3D6 
+  436EE871 44251005 3DBF7E0F 8ED89B25 0C5878D0 76323129 8E71BD8D 1C183F2A 
+  4684D05A 5B988AF3 E8F3AD92 F7FC8929 6F2037AA 5BC4A304 E355B525 CACFDB9E 
+  90CA239A 63987373 8D6720D7
+  quit    
+!         
+!         
+!         
+spanning-tree mode pvst
+spanning-tree extend system-id
+!         
+vlan internal allocation policy ascending
+!         
+ip ssh time-out 60
+ip ssh authentication-retries 2
+ip ssh version 2
+!         
+!         
+!         
+interface FastEthernet0/1
+ switchport access vlan 51
+ switchport mode access
+!         
+interface FastEthernet0/2
+ description interface de acesso da vlan 51 do primeiro usuario
+ switchport access vlan 51
+ switchport mode access
+!         
+interface FastEthernet0/3
+ description interface de acesso da vlan 52 do segundo usuario
+ switchport access vlan 52
+ switchport mode access
+!         
+interface FastEthernet0/4
+ description interface de acesso da vlan 53 do terceiro usuario
+ switchport access vlan 53
+ switchport mode access
+!         
+interface FastEthernet0/5
+ description Interface de Acesso da VLAN 05 do quarto usuario
+ switchport access vlan 54
+ switchport mode access
+!         
+interface FastEthernet0/6
+ description interface de acesso da vlan 06 wireless
+ switchport access vlan 55
+ switchport mode access
+!         
+interface FastEthernet0/7
+ shutdown 
+!         
+interface FastEthernet0/8
+ shutdown 
+!         
+interface FastEthernet0/9
+ shutdown 
+!         
+interface FastEthernet0/10
+ shutdown 
+!         
+interface FastEthernet0/11
+ shutdown 
+!         
+interface FastEthernet0/12
+ shutdown 
+!         
+interface FastEthernet0/13
+ shutdown 
+!         
+interface FastEthernet0/14
+ shutdown 
+!         
+interface FastEthernet0/15
+ shutdown 
+!         
+interface FastEthernet0/16
+ shutdown 
+!         
+interface FastEthernet0/17
+ shutdown 
+!         
+interface FastEthernet0/18
+ shutdown 
+!         
+interface FastEthernet0/19
+ shutdown 
+!         
+interface FastEthernet0/20
+ shutdown 
+!         
+interface FastEthernet0/21
+ shutdown 
+!         
+interface FastEthernet0/22
+ shutdown 
+!         
+interface FastEthernet0/23
+ shutdown 
+!         
+interface FastEthernet0/24
+ description interface de trunk com o router 2911 do grupo-05
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!         
+interface GigabitEthernet0/1
+!         
+interface GigabitEthernet0/2
+!         
+interface Vlan1
+ no ip address
+!         
+interface Vlan50
+ description Interface SVI de Gerenciamento do Grupo 5
+ ip address 172.16.50.253 255.255.255.0
+!         
+ip default-gateway 172.16.50.254
+ip classless
+ip http server
+ip http secure-server
+!         
+!         
+!         
+!         
+!         
+banner motd ^CSwitch do Grupo-05^C
+!         
+line con 0
+ exec-timeout 5 30
+ logging synchronous
+ login local
+line vty 0 4
+ exec-timeout 5 30
+ logging synchronous
+ login local
+ transport input ssh
+line vty 5 15
+ login    
+!         
+end  
